@@ -39,7 +39,7 @@ GROUP BY c.country
 ORDER BY total_rev DESC;
 
 
---Customer frquency and their country
+--Customer frequency and their country
 WITH customer_revenue AS
 (SELECT customerid, SUM (total) AS revenue_total, COUNT (invoiceid) AS customer_freq
 FROM invoice
